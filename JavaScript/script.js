@@ -1,14 +1,11 @@
-//Que. Given a string, reverse each word in the sentence
-
-
-var string ='Hello World'
-
-var reverseSentence = reverseBySeparator(string,"");
-var reverseEachWord = reverseBySeparator(reverseSentence,"");
-
-function reverseBySeparator(string, separator){
-      var rev = string.split(separator).reverse().join(separator);
-      return rev
+function reverseWords(input) {
+  const words = input.split(" ");
+  const reversedWords = words.map((word) => {
+    return word.split("").reverse().join("");
+  });
+  return reversedWords.join(" ");
 }
 
-console.log(rev)
+const inputString = "Hello World";
+const reversedString = reverseWords(inputString);
+console.log(reversedString);
