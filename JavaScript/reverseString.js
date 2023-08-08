@@ -1,27 +1,33 @@
-const inputString = "Hello World"
-let reversedString =''
+// const inputString = "Hello World"
+// let reversedString =''
 
-for (let i=inputString.length-1;i>=0;i--){
-  reversedString +=inputString[i]
-}
-document.write("<h1>"+reversedString+"</h1>")
+// for (let i=inputString.length-1;i>=0;i--){
+//   reversedString +=inputString[i]
+// }
+// // document.write("<h1>"+reversedString+"</h1>")
+// console.log(reversedString)
 
 //=======================================================>>>
+//WITH FUNCTION
 
-/*function reverseWords(input) {
+function reverseWords(input){
+
   const words = input.split(" ");
-  const reversedWords = words.map((word) => {
-    return word.split("").reverse().join("");
-  });
-  return reversedWords.join(" ");
+
+  const reverseWords = words.map((words)=>{return words.split("").reverse().join("");});
+
+  return reverseWords.join(" ");
+
 }
 
-const inputString = "Hello World";
+const inputString = "shryeank Bnsod"
 const reversedString = reverseWords(inputString);
-console.log(reversedString);
-*/
+console.log(reversedString)
+
 ////////=================================================>>>
 //WITHOUT FUNCTION
+
+
 
 // function reverseWordsManually(input) {
 //   let reversedString = '';
