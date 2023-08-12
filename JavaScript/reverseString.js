@@ -11,13 +11,13 @@
 //WITH FUNCTION
 
 function reverseWords(input){
-
   const words = input.split(" ");
 
-  const reverseWords = words.map((words)=>{return words.split("").reverse().join("");});
+  const reverseWords = words.map((words)=>{
+    return words.split("").reverse().join("");
+  });
 
   return reverseWords.join(" ");
-
 }
 
 const inputString = "shryeank Bnsod"
